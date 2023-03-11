@@ -5,5 +5,6 @@ export const ErrorMessages = {
   TRANSACTION_INVALID_ATTACHMENT_PATH: 'Invalid Url',
   TRANSACTION_CALCULATION_VALUE: 'Value should be positive',
   TRANSACTION_INVALID_NOTE_LENGHT: 'Note value should be less than 144 char',
-  TRANSACTION_INVALID_TYPE_ENUM_TRANSACTION: 'Invalid option'
+  TRANSACTION_INVALID_TYPE_ENUM_TRANSACTION: 'Invalid option',
+  INVALID_CREDENTIALS: 'Invalid credentials'
 }

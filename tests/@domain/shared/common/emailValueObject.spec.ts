@@ -1,4 +1,4 @@
-import { EmailValueObject } from '@domain/user/valueObjects/emailValueObject'
+import { EmailValueObject } from '@domain/shared/common/valueObjects/emailValueObject'
 
 describe('emailValueObject', () => {
   it('Should return a valid email', () => {

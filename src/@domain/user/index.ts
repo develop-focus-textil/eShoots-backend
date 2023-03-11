@@ -1,5 +1,5 @@
 export * from './aggregates/userAggregate'
-export * from './valueObjects/emailValueObject'
+export * from '../shared/common/valueObjects/emailValueObject'
 export * from './valueObjects/passwordValueObject'
 export * from './valueObjects/termsValueObject'
 export * from './valueObjects/userIdValueObject'

@@ -1,3 +1,10 @@
+#TAKS TODO AGGREGATES
+☐ Create userAggregate
+☐ Create userAggregate Test
+
+#TASKS TODO VALUE-OBJECTS
+
+
 #TASKS TODO INTERFACES
 ✔ User repository interface @started(04-03-2023) @done(04-03-2023) @lasted(30min)
 ☐ Budget box repository interface

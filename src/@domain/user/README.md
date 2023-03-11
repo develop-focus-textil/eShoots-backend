@@ -38,6 +38,13 @@ Usuário - Agregado Raiz
     id: Objecto de valor - OK
     email: Objecto de valor - OK
     senha: String - Ok
+    googleProfile?: {
+        id: Object de valor
+        email: Object de valor
+        locale: String
+        pictureUrl: String
+        name: String
+    }
     terms:: ip: objecto de valor - Ok
     terms:: acceptedAt (data): objecto de valor - Ok
 ```
@@ -51,6 +58,4 @@ Usuário - Agregado Raiz
         "os": "Linux",
         "type": "browser"
     },
-    "totalBalanceAvaliable": 10.00,
-    "budgetBoxIds": ["uuid", "uuid"]
 ```
