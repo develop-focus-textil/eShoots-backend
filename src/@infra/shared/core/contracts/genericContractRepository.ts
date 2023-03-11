@@ -27,6 +27,7 @@ export interface IGenericRepositoryContract<DomainAggregate > {
    */
   save: (entity: DomainAggregate) => Promise<void>
   delete: (id: string) => Promise<void>
+  findOne: (filter: IFilterInterface) => Promise<DomainAggregate | null>
   find: (filter: IFilterInterface) => Promise<DomainAggregate[] | null>
   /**
    * @param filter  as (key: value)
