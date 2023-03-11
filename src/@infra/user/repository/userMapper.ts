@@ -29,7 +29,8 @@ export class UserMapper implements IMapperContract<User, UserAggregate> {
         userAgent: term.value.userAgent
       })),
       createdAt: target.createdAt,
-      updatedAt: target.updatedAt
+      updatedAt: target.updatedAt,
+      googleID: target.googleProfile?.email.value.toString()
     }
   }
 }
