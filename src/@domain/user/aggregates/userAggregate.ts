@@ -1,14 +1,16 @@
 import { type UniqueEntityID } from '../../shared/core/uniqueEntityID'
 import { AggregateRoot } from '@domain/shared/core/aggregateRoot'
-import { type EmailValueObject } from '../valueObjects/emailValueObject'
+import { type EmailValueObject } from '../../shared/common/valueObjects/emailValueObject'
 import { type PasswordValueObject } from '../valueObjects/passwordValueObject'
 import { type TermsValueObject } from '../valueObjects/termsValueObject'
 import { type BaseDomainEntity, Result } from '@domain/shared/core'
+import { type GoogleProfileValueObject } from '../valueObjects/googleProfileValueObject'
 
 type IUserAggregateProps = {
   email: EmailValueObject
   password: PasswordValueObject
   terms: TermsValueObject[]
+  googleProfile?: GoogleProfileValueObject | null
 } & BaseDomainEntity
 
 /**
@@ -24,6 +26,7 @@ export class UserAggregate extends AggregateRoot<IUserAggregateProps> {
   public get email (): EmailValueObject { return this.props.email }
   public get password (): PasswordValueObject { return this.props.password }
   public get terms (): TermsValueObject[] { return this.props.terms }
+  public get googleProfile (): GoogleProfileValueObject | null { return this.props?.googleProfile ?? null }
   public get deletedAt (): Date { return this.props.deletedAt ?? new Date() }
 
   public static create (props: IUserAggregateProps, id?: UniqueEntityID): Result<UserAggregate> {

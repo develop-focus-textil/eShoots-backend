@@ -1,4 +1,4 @@
-import { GoogleIDValueObject } from '@domain/googleProfile/valueObjects/googleIDValueObject'
+import { GoogleIDValueObject } from '@domain/user/valueObjects/googleProfile/googleIDValueObject'
 import { ErrorMessages } from '@domain/shared/common/errors'
 import { UniqueEntityID } from '@domain/shared/core'
 
