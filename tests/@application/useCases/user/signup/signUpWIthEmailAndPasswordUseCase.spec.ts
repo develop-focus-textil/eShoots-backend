@@ -1,4 +1,4 @@
-import { SignupUseCases } from '@application/useCases/user/signup/signUpUseCases'
+import { SignUpEmailAndPasswordUseCases } from '@application/useCases/user/signup/signUpWithEmailAndPasswordUseCase'
 import { type IUserRepositoryContract } from '@domain/contracts/repositories/userRepository.contract'
 import { type OS } from '@domain/user'
 import { mock, type MockProxy } from 'jest-mock-extended'
@@ -33,11 +33,11 @@ describe('SignUpUseCase', () => {
   }
 
   let userRepository: MockProxy<IUserRepositoryContract>
-  let sut: SignupUseCases
+  let sut: SignUpEmailAndPasswordUseCases
 
   beforeEach(() => {
     userRepository = mock()
-    sut = new SignupUseCases(userRepository)
+    sut = new SignUpEmailAndPasswordUseCases(userRepository)
   })
 
   it('Should be defined', () => {

@@ -7,15 +7,16 @@ import { type ISignUpDTO } from './signupDTO'
 import { useCases } from '@application/useCases/useCases'
 import { Inject, NotAcceptableException } from '@nestjs/common'
 
-export class SignupUseCases extends useCases<ISignUpDTO> {
+export class SignUpEmailAndPasswordUseCases extends useCases<ISignUpDTO.system> {
   public constructor (
     @Inject('IUserRepository')
     private readonly userRepository: IUserRepositoryContract
   ) { 
     super('SignUp')
   }
+  
 
-  public async run (props: ISignUpDTO): Promise<Result<void>> {
+  public async run (props: ISignUpDTO.system): Promise<Result<void>> {
 
     if (!props.acceptedTerms) {
       return Result.fail<void>('Terms should be accepted')
