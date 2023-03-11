@@ -34,6 +34,9 @@ export class User {
   @Prop({ type: Array<ITermsTypes>, required: true })
   public terms!: ITermsTypes[]
 
+  @Prop({ type: String, default: '' })
+  public googleID?: string
+
   @Prop({ type: Date, required: true, default: new Date() })
   public createdAt!: Date
 
