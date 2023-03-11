@@ -51,4 +51,13 @@ describe('SignUpWithGoogleUseCase', () => {
     expect(result.isFailure).toBe(true)
     expect(result.isSuccess).toBe(false)
   })
+
+  it('Shoudl return fails if not find user referring to be token', async () => {
+    jest.spyOn(consoleGoogle, 'auth').mockResolvedValueOnce(null)
+    const fakeDTOParams = fakeDTO()
+    const result = await sut.run(fakeDTOParams)
+    expect(result.isFailure).toBe(true)
+    expect(result.isSuccess).toBe(false)
+    expect(result.error).toBe('User account not found')
+  })
 })
