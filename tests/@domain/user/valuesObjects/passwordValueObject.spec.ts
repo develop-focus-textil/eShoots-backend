@@ -1,5 +1,5 @@
 import { PasswordValueObject } from '@domain/user/valueObjects/passwordValueObject'
-import { hashSync  } from 'bcrypt'
+import { hashSync } from 'bcrypt'
 
 describe('PasswordValueObject', () => {
   it('Should create a valid password', () => {
@@ -43,7 +43,7 @@ describe('PasswordValueObject', () => {
     await password.getResult().encryptPassword()
     expect(password.getResult().isAlreadyEncrypt).toBe(true)
   })
-  
+
   it('Should compare an encripted password and return true if match', async () => {
     const password = PasswordValueObject.create('123abc')
     expect(password.isSuccess).toBe(true)
@@ -74,5 +74,11 @@ describe('PasswordValueObject', () => {
 
     const isEqualEncrypted = await password.getResult().comparePassword('invalid_password')
     expect(isEqualEncrypted).toBe(false)
+  })
+
+  it('Should return success if isEmpty true for googleAuth or FacebookAuth', () => {
+    const password = PasswordValueObject.create('', true)
+    expect(password.isSuccess).toBe(true)
+    expect(password.isFailure).toBe(false)
   })
 })
