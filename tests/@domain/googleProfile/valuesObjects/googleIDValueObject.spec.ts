@@ -7,4 +7,11 @@ describe('Google ID Value Object', () => {
     const googleID = GoogleIDValueObject.create(new UniqueEntityID('valid_credentials_google_id'))
     expect(googleID.isSuccess).toBe(true)
   })
+
+  it('Should return fails if not provided google id', () => {
+    const googleID = GoogleIDValueObject.create(null as any)
+    expect(googleID.isSuccess).toBe(false)
+    expect(googleID.isFailure).toBe(true)
+    expect(googleID.error).toBe(ErrorMessages.INVALID_CREDENTIALS)
+  })
 })
