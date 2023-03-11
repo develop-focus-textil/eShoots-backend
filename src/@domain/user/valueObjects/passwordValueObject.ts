@@ -28,14 +28,16 @@ export class PasswordValueObject extends ValueObject<IPasswordValueObjectProps> 
     return plainText === this.props.value
   }
 
-  public static create (password: string): Result<PasswordValueObject> {
-    const isEncrypt = this.#isEncryptPassword.test(password)
+  public static create (password: string, isEmpty?: boolean): Result<PasswordValueObject> {
+    if (isEmpty) {
+      return Result.ok<PasswordValueObject>(new PasswordValueObject({ value: password }, false))
+    }
 
+    const isEncrypt = this.#isEncryptPassword.test(password)
     if (!isEncrypt) {
       const isValidPasswordLength = password.length >= 3 && password.length <= 20
       if (!isValidPasswordLength) return Result.fail<PasswordValueObject>('Password must have min 3 char and max 20 char')
     }
-
     const pass = new PasswordValueObject({ value: password }, isEncrypt)
     return Result.ok<PasswordValueObject>(pass)
   }
