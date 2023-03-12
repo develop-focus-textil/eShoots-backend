@@ -1,56 +1,26 @@
 #TAKS TODO AGGREGATES
 ☐ Create userAggregate
-☐ Create userAggregate Test
+☐ Create tokenUserAggregate                @started(-)              @done(-)
 
 #TASKS TODO VALUE-OBJECTS
-
+☐ Create userAggregate test                @started(10-03-2023)     @done(11-03-2023)       @updated(-)
+☐ Create tokenIDValueObject                @started(-)              @done(-)                @updated(-)
+☐ Create tokenEncryptedValueObject Test    @started(-)              @done(-)                @updated(-)
+☐ Create tokenEncryptedValueObject         @started(-)              @done(-)                @updated(-)
 
 #TASKS TODO INTERFACES
-✔ User repository interface @started(04-03-2023) @done(04-03-2023) @lasted(30min)
-☐ Budget box repository interface
-☐ Transaction repository interface
+✔ User repository interface                @started(04-03-2023)     @done(04-03-2023)       @updated(-)
+
 
 #TASKS TODO USECASES  
-✔ Create abstract implementation use Case  @started(07-03-2023) @done(09-03-2023)
-✔ Signup use case DTO @started(04-03-2023) @done(04-03-2023) @lasted(10min)
-☐ Signup use case @started(04-03-2023) @done(09-03-2023)
-✔  Signup use case test @started(07-03-2023)
+✔ Create abstract implementation use Case  @started(07-03-2023)    @done(09-03-2023)       @updated(-)
+✔ Signup use case DTO                      @started(04-03-2023)    @done(-)                @updated(-)
+☐ Signup use case                          @started(04-03-2023)    @done(-)                @updated(-)
+✔  Signup use case test                    @started(07-03-2023)
 ☐ Sigin use case DTO
 ☐ Sigin use case
-☐ Block user use case DTO
-☐ Block user use case 
-☐ Unblock user use case DTO
-☐ Unblock user use case 
-☐ Delete user use case DTO
-☐ Delete user use case 
-☐ Create a new budget box use case DTO
-☐ Create a new budget box use case 
-☐ Change budget box percentage use case DTO
-☐ Change budget box percentage use case 
-☐ Transform budget box on non percentage box use case DTO
-☐ Transform budget box on non percentage box use case
-☐ Transform a non percentage box on percentage box one use case DTO
-☐ Transform a non percentage box on percentage box one use case 
-☐ Add a new reason on a budget box use case DTO
-☐ Add a new reason on a budget box use case 
-☐ Change reason description use case DTO
-☐ Change reason description use case
-☐ Remove an reason from a budget box use case DTO
-☐ Remove an reason from a budget box use case  
-☐ Delete budget box use case DTO
-☐ Delete budget box use case 
-☐ Register a new "ENTRADA" use case DTO
-☐ Register a new "ENTRADA" use case
-☐ Register a new "SAIDA" use case DTO
-☐ Register a new "SAIDA" use case 
-☐ Upload a new attachment use case DTO
-☐ Upload a new attachment use case
-☐ Unregister a "ENTRADA" use case DTO
-☐ Unregister a "ENTRADA" use case 
-☐ Unregister a "SAIDA" use case DTO
-☐ Unregister a "SAIDA" use case
-☐ Move balance avaliable value from a box to another use case DTO
-✔  Move balance avaliable value from a box to another use case
+
+
 ☐ GetUserAgent Decorator @started(07-05-2023) @done(07-05-2023) @lasted(40min)
 ☐ AuthGuard Decorator
 
@@ -85,15 +55,3 @@
 ✔  Create user graphql schema @started(04-03-2023)
 ☐ Create user mutation
 ✔ Create user resolver @started(05-03-2023)
-
-☐ Create budgetBox module 
-☐ Create budgetBox service
-☐ Create budgetBox graphql schema 
-☐ Create budgetBox mutation
-☐ Create budgetBox resolver
-
-☐ Create transaction module 
-☐ Create transaction service
-☐ Create transaction graphql schema 
-☐ Create transaction mutation
-☐ Create transaction resolver
