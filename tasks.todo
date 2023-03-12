@@ -1,22 +1,22 @@
 #TAKS TODO AGGREGATES
 ☐ Create userAggregate
-☐ Create tokenUserAggregate                @started(-)              @done(-)
+☐ Create tokenUserAggregate                  @started(-)              @done(-)
 
 #TASKS TODO VALUE-OBJECTS
-☐ Create userAggregate test                @started(10-03-2023)     @done(11-03-2023)       @updated(-)
-☐ Create tokenIDValueObject                @started(-)              @done(-)                @updated(-)
-☐ Create tokenEncryptedValueObject Test    @started(-)              @done(-)                @updated(-)
-☐ Create tokenEncryptedValueObject         @started(-)              @done(-)                @updated(-)
+✅  Create tokenIDValueObject                @started(11-03-2023)     @done(11-03-2023)       @updated(-)
+✅  Create tokenIDValueObject test           @started(11-03-2023)     @done(11-03-2023)       @updated(-)
+☐ Create tokenEncryptedValueObject Test      @started(-)              @done(-)                @updated(-)
+☐ Create tokenEncryptedValueObject           @started(-)              @done(-)                @updated(-)
 
 #TASKS TODO INTERFACES
-✔ User repository interface                @started(04-03-2023)     @done(04-03-2023)       @updated(-)
+✔ User repository interface                  @started(04-03-2023)     @done(04-03-2023)       @updated(-)
 
 
 #TASKS TODO USECASES  
-✔ Create abstract implementation use Case  @started(07-03-2023)    @done(09-03-2023)       @updated(-)
-✔ Signup use case DTO                      @started(04-03-2023)    @done(-)                @updated(-)
-☐ Signup use case                          @started(04-03-2023)    @done(-)                @updated(-)
-✔  Signup use case test                    @started(07-03-2023)
+✅  Create abstract implementation use Case  @started(07-03-2023)    @done(09-03-2023)       @updated(-)
+✅  Signup use case DTO                      @started(04-03-2023)    @done(-)                @updated(-)
+☐ Signup use case                            @started(04-03-2023)    @done(-)                @updated(-)
+✅   Signup use case test                    @started(07-03-2023)
 ☐ Sigin use case DTO
 ☐ Sigin use case
 
