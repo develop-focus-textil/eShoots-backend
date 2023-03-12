@@ -5,8 +5,6 @@ Usuário - Agregado Raiz
     "id": "uuid",
     "email": "johnjoe@test.com",
     "password": "123456",
-    "budgetBoxIds": ["uuid", "uuid"],
-    "totalBalanceAvaliable": 10.00,
     "terms": [
         {
             "ip": "120.06.09.011",
@@ -35,11 +33,18 @@ Usuário - Agregado Raiz
 ## Structure
 
 ```javascript
-    USER: Aggregate Root 
+    USER: Aggregate Root - OK
 
     id: Objecto de valor - OK
     email: Objecto de valor - OK
     senha: String - Ok
+    googleProfile?: {
+        id: Object de valor
+        email: Object de valor
+        locale: String
+        pictureUrl: String
+        name: String
+    }
     terms:: ip: objecto de valor - Ok
     terms:: acceptedAt (data): objecto de valor - Ok
 ```
@@ -53,6 +58,4 @@ Usuário - Agregado Raiz
         "os": "Linux",
         "type": "browser"
     },
-    "totalBalanceAvaliable": 10.00,
-    "budgetBoxIds": ["uuid", "uuid"]
 ```

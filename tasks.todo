@@ -1,0 +1,57 @@
+#TAKS TODO AGGREGATES
+☐ Create userAggregate
+☐ Create tokenUserAggregate                  @started(-)              @done(-)
+
+#TASKS TODO VALUE-OBJECTS
+✅  Create tokenIDValueObject                @started(11-03-2023)     @done(11-03-2023)       @updated(-)
+✅  Create tokenIDValueObject test           @started(11-03-2023)     @done(11-03-2023)       @updated(-)
+☐ Create tokenEncryptedValueObject Test      @started(-)              @done(-)                @updated(-)
+☐ Create tokenEncryptedValueObject           @started(-)              @done(-)                @updated(-)
+
+#TASKS TODO INTERFACES
+✔ User repository interface                  @started(04-03-2023)     @done(04-03-2023)       @updated(-)
+
+
+#TASKS TODO USECASES  
+✅  Create abstract implementation use Case  @started(07-03-2023)    @done(09-03-2023)       @updated(-)
+✅  Signup use case DTO                      @started(04-03-2023)    @done(-)                @updated(-)
+☐ Signup use case                            @started(04-03-2023)    @done(-)                @updated(-)
+✅   Signup use case test                    @started(07-03-2023)
+☐ Sigin use case DTO
+☐ Sigin use case
+
+
+☐ GetUserAgent Decorator @started(07-05-2023) @done(07-05-2023) @lasted(40min)
+☐ AuthGuard Decorator
+
+#TASKS TODO INFRA ENTITY INTERFACES
+✔ User interface @started(21-05-02 13:32) @done(03-03-2023 13:47) @lasted(15m35s)
+☐ Budget box interface
+☐ Transaction interface
+
+#TASKS TODO MAPPER
+☐ User mapper @started(03-03-2023) @done(04-03-2023) @lasted(44min)
+☐ Budget box mapper
+☐ Transaction mapper 
+
+#TASKS TODO REPOSITORY 
+☐ User repository @started(04-03-2023)
+☐ Budget box repository
+☐ Transaction repository
+
+#TASKS TODO SCHEMAS 
+✔ User schema @done(03-03-2023 13:49)
+☐ Transaction schema
+☐ Budget box reason schema
+☐ Budget box schema
+
+#Configs
+✔ Install mongoose nest/mongoose @done(03-03-2023 13:30)
+✔ Refactor error message apply correct grammar @done(03-03-2023 13:25)
+
+#Nest Modules 
+✔ Create user module @done(05-03-2023)
+☐ Create user service
+✔  Create user graphql schema @started(04-03-2023)
+☐ Create user mutation
+✔ Create user resolver @started(05-03-2023)
